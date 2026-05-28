@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #222;
+  background-color: #fff;
+}
+
+/* ── Navigation ── */
+nav {
+  background-color: #1a1a2e;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav ul a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav ul a:hover { color: #fff; }
+nav ul a.active { color: #fff; border-bottom: 2px solid #0077cc; padding-bottom: 2px; }
+
+/* ── Hero ── */
+.hero {
+  background-color: #1a1a2e;
+  color: #fff;
+  text-align: center;
+  padding: 100px 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-canvas-wrap {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#canvas-particles {
+  display: block;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  border: 1px solid #555;
+}
+
+.btn-secondary:hover { border-color: #fff; }
+
+/* ── Sections ── */
+section {
+  padding: 60px 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section h2 { font-size: 28px; margin-bottom: 16px; }
+section p { font-size: 16px; line-height: 1.7; color: #444; margin-bottom: 14px; }
+
+hr { border: none; border-top: 1px solid #eee; }
+
+/* ── Clickable Quote ── */
+.cite-quote {
+  display: block;
+  background-color: #f0f7ff;
+  border-left: 3px solid #0077cc;
+  border-radius: 0 6px 6px 0;
+  padding: 12px 16px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #0077cc;
+  text-decoration: none;
+  font-style: italic;
+  transition: background-color 0.2s;
+}
+
+.cite-quote:hover { background-color: #daeeff; text-decoration: underline; }
+
+.cite-quote span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  display: block;
+  margin-top: 4px;
+  color: #555;
+}
+
+/* ── Stat Grid ── */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.stat-card {
+  background: #f5f9ff;
+  border: 1px solid #d0e8ff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-card .num { font-size: 28px; font-weight: bold; color: #0077cc; }
+.stat-card .label { font-size: 13px; color: #555; margin-top: 6px; line-height: 1.5; }
+
+/* ── Topics Preview ── */
+.topics-preview {
+  background-color: #f5f5f5;
+  padding: 60px 32px;
+}
+
+.topics-preview-inner { max-width: 800px; margin: 0 auto; }
+.topics-preview h2 { font-size: 28px; margin-bottom: 8px; }
+.topics-preview p { font-size: 16px; color: #555; margin-bottom: 24px; }
+
+.topic-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+
+.chip {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 99px;
+  padding: 7px 16px;
+  font-size: 14px;
+  color: #333;
+}
+
+.btn-topics {
+  display: inline-block;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* ── Topics Page ── */
+.page-header {
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 48px 32px;
+  text-align: center;
+}
+
+.page-header h1 { font-size: 32px; margin-bottom: 12px; }
+.page-header p { font-size: 16px; color: #aaa; max-width: 560px; margin: 0 auto; }
+
+.topics-main {
+  max-width: 780px;
+  margin: 48px auto;
+  padding: 0 24px 64px;
+}
+
+.topicList { display: flex; flex-direction: column; gap: 12px; }
+
+.listItem {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 20px 24px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  overflow: hidden;
+}
+
+.listItem:hover { border-color: #0077cc; }
+.listItem.expanded { border-color: #0077cc; border-width: 2px; }
+
+.item-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.item-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #e8f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.item-title { font-size: 17px; font-weight: bold; color: #1a1a2e; flex: 1; }
+
+.item-arrow { font-size: 18px; color: #0077cc; transition: transform 0.3s; }
+.listItem.expanded .item-arrow { transform: rotate(180deg); }
+
+.item-body {
+  display: none;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.listItem.expanded .item-body { display: block; }
+
+.item-body p { font-size: 15px; color: #444; line-height: 1.7; margin-bottom: 12px; }
+
+.item-body ul { padding-left: 20px; margin-bottom: 12px; }
+.item-body ul li { font-size: 15px; color: #444; line-height: 1.8; }
+
+/* ── References Page ── */
+.refs-main { max-width: 800px; margin: 0 auto; padding: 48px 32px; }
+
+.refs-main h2 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.reference-entry {
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #eee;
+}
+
+.reference-entry:last-child { border-bottom: none; }
+
+.ref-title { font-size: 15px; font-weight: bold; color: #222; margin-bottom: 4px; line-height: 1.5; }
+.ref-authors { font-size: 14px; color: #444; margin-bottom: 2px; }
+.ref-journal { font-size: 14px; color: #666; font-style: italic; margin-bottom: 8px; }
+.ref-note { font-size: 13px; color: #666; line-height: 1.6; margin-bottom: 8px; }
+
+.ref-link { font-size: 13px; color: #0077cc; text-decoration: none; }
+.ref-link:hover { text-decoration: underline; }
+
+.notice {
+  border-left: 3px solid #ccc;
+  padding: 10px 14px;
+  margin-bottom: 32px;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.notice strong { color: #333; }
+
+/* ── Footer ── */
+footer {
+  background-color: #1a1a2e;
+  color: #aaa;
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+}
