@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Topics</title>
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -25,149 +25,86 @@
   <main class="topics-main">
     <div class="topicList">
 
-      <div class="listItem">
+      <div class="listItem" data-topic="passwords">
         <div class="item-header">
+          <div class="item-icon">1</div>
           <div class="item-title">Use Strong, Unique Passwords</div>
           <div class="item-arrow">&#8964;</div>
         </div>
-        <div class="item-body">
-          <p>Most people use one simple password for everything. If that one password gets stolen, attackers can access all your accounts at once.</p>
-          <ul>
-            <li>Use a passphrase — something like <strong>"Pizza!OnFridays2024"</strong> is long, easy to remember, and very hard to crack.</li>
-            <li>Never reuse the same password across different sites.</li>
-            <li>Use a password manager like Bitwarden (free) to store them securely.</li>
-          </ul>
-          <a class="cite-quote" href="references.html">
-            "65% of people reuse the same password across multiple sites, making one breach a gateway to many accounts."
-            <span>&#8594; See References</span>
-          </a>
-        </div>
       </div>
 
-      <div class="listItem">
+      <div class="listItem" data-topic="phishing">
         <div class="item-header">
+          <div class="item-icon">2</div>
           <div class="item-title">Watch Out for Phishing</div>
           <div class="item-arrow">&#8964;</div>
         </div>
-        <div class="item-body">
-          <p>Phishing is when attackers send fake emails or messages pretending to be someone you trust — like your bank, Netflix, or even your school — to trick you into giving up your login info.</p>
-          <ul>
-            <li>Check the sender's actual email address, not just the display name.</li>
-            <li>Hover over links before clicking to see where they really go.</li>
-            <li>If something feels urgent or too good to be true, it probably is.</li>
-          </ul>
-          <a class="cite-quote" href="references.html">
-            "Phishing scams on social media platforms like Instagram are rising, with many users unaware of how to identify them."
-            <span>&#8594; See References &mdash; Phishing Scams on Social Media (2025)</span>
-          </a>
-        </div>
       </div>
 
-      <div class="listItem">
+      <div class="listItem" data-topic="social">
         <div class="item-header">
+          <div class="item-icon">3</div>
           <div class="item-title">Be Careful What You Share on Social Media</div>
           <div class="item-arrow">&#8964;</div>
         </div>
-        <div class="item-body">
-          <p>It is easy to accidentally share information that hackers can use against you. Your birthday, hometown, school, or pet's name might be the answer to your security questions.</p>
-          <ul>
-            <li>Set your profiles to private.</li>
-            <li>Avoid posting things like your address, daily schedule, or travel plans.</li>
-            <li>Be selective about who you accept as a follower or friend.</li>
-          </ul>
-          <a class="cite-quote" href="references.html">
-            "Users' awareness of phishing on social networks is still comparatively low compared with email-based attacks."
-            <span>&#8594; See References &mdash; Phishing Scams on Social Media (2025)</span>
-          </a>
-        </div>
       </div>
 
-      <div class="listItem">
+      <div class="listItem" data-topic="updates">
         <div class="item-header">
+          <div class="item-icon">4</div>
           <div class="item-title">Keep Your Software Updated</div>
           <div class="item-arrow">&#8964;</div>
         </div>
-        <div class="item-body">
-          <p>It is annoying, but updates matter. Most software updates include security patches that fix vulnerabilities attackers actively look for in older versions.</p>
-          <ul>
-            <li>Enable automatic updates on your phone and computer.</li>
-            <li>Keep your apps, browser, and operating system up to date.</li>
-            <li>Do not ignore update notifications — they are there for a reason.</li>
-          </ul>
-        </div>
       </div>
 
-      <div class="listItem">
+      <div class="listItem" data-topic="wifi">
         <div class="item-header">
+          <div class="item-icon">5</div>
           <div class="item-title">Be Careful on Public Wi-Fi</div>
           <div class="item-arrow">&#8964;</div>
         </div>
-        <div class="item-body">
-          <p>Public Wi-Fi at coffee shops, airports, or libraries is convenient but risky. Anyone on the same network can potentially intercept what you are doing.</p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
       </div>
 
-      <div class="listItem">
+      <div class="listItem" data-topic="2fa">
         <div class="item-header">
+          <div class="item-icon">6</div>
           <div class="item-title">Turn On Two-Factor Authentication (2FA)</div>
           <div class="item-arrow">&#8964;</div>
         </div>
-        <div class="item-body">
-          <p>Two-factor authentication means that even if someone steals your password, they still cannot get into your account without a second step — usually a code sent to your phone.</p>
-          <ul>
-            <li>Enable 2FA on your email, social media, and banking accounts first.</li>
-            <li>Use an authenticator app like Google Authenticator instead of SMS when possible.</li>
-            <li>It takes 10 seconds to set up and stops most account takeovers.</li>
-          </ul>
-          <a class="cite-quote" href="references.html">
-            "Cybersecurity awareness training significantly improves students' ability to adopt protective behaviors like enabling multi-factor authentication."
-            <span>&#8594; See References &mdash; Cybersecurity Awareness Among University Students</span>
-          </a>
-        </div>
       </div>
 
-      <div class="listItem">
+      <div class="listItem" data-topic="breaches">
         <div class="item-header">
-          <div class="item-title"> Breach</div>
+          <div class="item-icon">7</div>
+          <div class="item-title">Check If You Have Been in a Breach</div>
           <div class="item-arrow">&#8964;</div>
         </div>
-        <div class="item-body">
-          <p>Breaches</p>
-          <ul>
-            <li> <strong></strong> </li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
       </div>
 
-      <div class="listItem">
+      <div class="listItem" data-topic="children">
         <div class="item-header">
+          <div class="item-icon">8</div>
           <div class="item-title">Keeping Children Safe Online</div>
           <div class="item-arrow">&#8964;</div>
-        </div>
-        <div class="item-body">
-          <p></p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <a class="cite-quote" href="references.html">
-            "Children face a wide range of cybersecurity risks including cyberbullying, privacy threats, and exposure to inappropriate content."
-            <span>&#8594; See References &mdash; Cybersecurity Awareness for Children (2021)</span>
-          </a>
         </div>
       </div>
 
     </div>
   </main>
+
+
+  <div class="topic-overlay" id="topicOverlay">
+    <div class="overlay-card" id="overlayCard">
+      <button class="overlay-close" id="overlayClose">&times;</button>
+      <div class="overlay-header">
+        <div class="overlay-icon" id="overlayIcon"></div>
+        <div class="overlay-title" id="overlayTitle"></div>
+      </div>
+      <div class="overlay-body" id="overlayBody"></div>
+    </div>
+  </div>
+
+  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
