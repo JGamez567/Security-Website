@@ -193,7 +193,7 @@ const topicData = {
         <li>Be selective about who you accept as a follower or friend.</li>
         <li>Don't tag your location in real time.</li>
       </ul>`,
-    cite: { text: "Users' awareness of phishing on social networks is still comparatively low compared with email-based attacks.", label: 'See References — Phishing Scams on Social Media (2025)' }
+    cite: { text: 'Phishing on social media platforms surged 103% in 2021, yet 60.3% of Instagram users surveyed had never received any phishing awareness training.', label: 'See References — Mouncey & Ciobotaru, Journal of Economic Criminology (2025)' }
   },
   updates: {
     icon: '4',
@@ -264,7 +264,7 @@ const topicData = {
         <li>Know which apps and platforms your child is using.</li>
         <li>Roblox and Minecraft are the most common games predators are on. Same thing with apps like Discord and Snapchat.</li>
       </ul>`,
-    cite: { text: 'Children face a wide range of cybersecurity risks including cyberbullying, privacy threats, and exposure to inappropriate content.', label: 'See References — Cybersecurity Awareness for Children (2021)' }
+   cite: { text: 'A review of 56 peer-reviewed studies found that the most commonly addressed cybersecurity risks for children include privacy threats, cyberbullying, and exposure to inappropriate content.', label: 'See References — Quayyum, Cruzes & Jaccheri, International Journal of Child-Computer Interaction (2021)' }
   }
 }
 
