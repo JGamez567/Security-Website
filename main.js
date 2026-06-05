@@ -164,7 +164,7 @@ const topicData = {
         <li>Use a free password manager like Bitwarden to store them all securely you only need to remember one master password.</li>
         <li>Avoid using personal info like birthdays, pet names, or your school in your password.</li>
       </ul>`,
-    cite: { text: '65% of people reuse the same password across multiple sites, making one breach a gateway to many accounts.', label: 'See References' }
+    cite: { text: 'Using an easy-to-guess password is like locking the door but leaving the key in the lock — and reusing the same password across accounts means one breach can expose all of them.', label: 'See References — Bitwarden, State of Password Security (2025), citing CISA' }
   },
   phishing: {
     icon: '2',
@@ -202,9 +202,9 @@ const topicData = {
     content: `
       <p>It is annoying, but updates really matter. Most software updates include security patches that fix known vulnerabilities. Attackers actively look for people running outdated versions because they know exactly what weaknesses to exploit.</p>
       <ul>
-        <li>Enable <strong>automatic updates</strong> on your phone and computer.</li>
+        <li>Enable automatic updates on your phone and computer.</li>
         <li>Keep your apps, browser, and operating system up to date.</li>
-        <li>Do not ignore update notifications — they are there for a reason.</li>
+        <li>Do not ignore update notifications they are there for a reason.</li>
         <li>Outdated software is one of the easiest ways for attackers to hack you.</li>
       </ul>`,
     cite: null
